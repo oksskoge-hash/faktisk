@@ -296,7 +296,7 @@
   function tick(){
     var diff = Math.max(0, Date.now() - START.getTime());
     var sec = Math.floor(diff/1000);
-    d.textContent = Math.floor(sec/86400);
+    d.textContent = Math.floor(sec/86400) + 1; // 15. juni teller som dag 1
     h.textContent = Math.floor(sec%86400/3600);
     m.textContent = Math.floor(sec%3600/60);
     s.textContent = sec%60;
